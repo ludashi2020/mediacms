@@ -176,7 +176,7 @@ while true ; do
 	case $bentoConfig in
 	[bB*] )
 		echo "Building bento4 from source"
-		git clone -b v1.6.0-640 https://github.com/axiomatic-systems/Bento4 /srv/mediacms/bento4
+		git clone -b v1.6.0-640 https://hub.dd.ci/axiomatic-systems/Bento4 /srv/mediacms/bento4
 		cd /srv/mediacms/bento4/
 		mkdir bin
 		cd /srv/mediacms/bento4/bin/
@@ -196,7 +196,7 @@ while true ; do
 	[dD*] )
 		cd /srv/mediacms/
 		wget http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-1-6-0-637.x86_64-unknown-linux.zip
-		bsdtar -xf Bento4-SDK-1-6-0-637.x86_64-unknown-linux.zip -s '/Bento4-SDK-1-6-0-637.x86_64-unknown-linux/bento4/'
+		tar -xf Bento4-SDK-1-6-0-637.x86_64-unknown-linux.zip -s '/Bento4-SDK-1-6-0-637.x86_64-unknown-linux/bento4/'
 
 		break
 		;;
